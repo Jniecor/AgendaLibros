@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-  <persistence-unit name="AgendaContactosPU" transaction-type="RESOURCE_LOCAL">
+  <persistence-unit name="AgendaLibrosPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-    <class>es.julionieto.agendacontactos.entities.Provincia</class>
-    <class>es.julionieto.agendacontactos.entities.Persona</class>
+    <class>es.julionieto.agendalibros.entities.Editorial</class>
+    <class>es.julionieto.agendalibros.entities.Libro</class>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:derby:BDAgendaContactos;create=true"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby:BDAgendaLibros;create=true"/>
       <property name="javax.persistence.jdbc.user" value="APP"/>
       <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
       <property name="javax.persistence.jdbc.password" value=""/>

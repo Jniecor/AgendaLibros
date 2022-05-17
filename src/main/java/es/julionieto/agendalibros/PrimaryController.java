@@ -3,14 +3,17 @@ package es.julionieto.agendalibros;
 import es.julionieto.agendalibros.entities.Libro;
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javax.persistence.Query;
 
 public class PrimaryController implements Initializable {
 
@@ -54,7 +57,14 @@ public class PrimaryController implements Initializable {
                         textFieldAutor.setText("");
                     }
                 });
-//        cargarTodosLibros;
+        cargarTodosLibros();
+    }
+    
+    private void cargarTodosLibros(){
+        Query queryLibroFindAll = App.em.createNamedQuery("Libro.findAll");
+        List<Libro> listLibro = queryLibroFindAll.getResultList();
+        System.out.print("a" + listLibro.size());
+        tableViewLibros.setItems(FXCollections.observableArrayList(listLibro));
     }
     
     

@@ -1,6 +1,6 @@
-es\julionieto\agendacontactos\SecondaryController.class
+es\julionieto\agendalibros\PrimaryController.class
+es\julionieto\agendalibros\entities\Editorial.class
 module-info.class
-es\julionieto\agendacontactos\App.class
-es\julionieto\agendacontactos\entities\Persona.class
-es\julionieto\agendacontactos\PrimaryController.class
-es\julionieto\agendacontactos\entities\Provincia.class
+es\julionieto\agendalibros\App.class
+es\julionieto\agendalibros\entities\Libro.class
+es\julionieto\agendalibros\SecondaryController.class

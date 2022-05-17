@@ -30,14 +30,14 @@ public class App extends Application {
         } catch (PersistenceException ex) {
             Logger.getLogger(App.class.getName()).log(Level.WARNING, ex.getMessage(), ex);
         }
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        scene = new Scene(loadFXML("primary"), 751, 520);
         stage.setScene(scene);
         stage.show();
         
-        Libro p = new Libro(0, "Harry Potter y el prisionero de Azkaban", "JK Rowling");
-        em.getTransaction().begin();
-        em.persist(p);
-        em.getTransaction().commit();
+//        Libro p = new Libro(0, "Harry Potter y el prisionero de Azkaban", "JK Rowling");
+//        em.getTransaction().begin();
+//        em.persist(p);
+//        em.getTransaction().commit();
     }
     
     @Override

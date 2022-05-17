@@ -23,7 +23,7 @@ public class Editorial implements Serializable {
     @javax.persistence.Basic(optional = false)
     @javax.persistence.Column(name = "NOMBRE")
     private String nombre;
-    @javax.persistence.OneToMany(mappedBy = "provincia")
+    @javax.persistence.OneToMany(mappedBy = "editorial")
     private Collection<Libro> libroCollection;
 
     public Editorial() {

@@ -81,14 +81,6 @@ public class Libro implements Serializable {
         this.autor = autor;
     }
 
-//    public Integer getEditorial() {
-//        return editorial;
-//    }
-//
-//    public void setEditorial(Integer editorial) {
-//        this.editorial = editorial;
-//    }
-
     public String getIsbn() {
         return isbn;
     }
