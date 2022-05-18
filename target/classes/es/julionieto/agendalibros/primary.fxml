@@ -40,7 +40,7 @@
       </HBox>
       <HBox alignment="CENTER_RIGHT" spacing="20.0">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" text="Guardar">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onActionButtonGuardar" text="Guardar">
                <HBox.margin>
                   <Insets />
                </HBox.margin></Button>
