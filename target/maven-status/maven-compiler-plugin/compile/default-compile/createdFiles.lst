@@ -1,6 +1,8 @@
 es\julionieto\agendalibros\PrimaryController.class
 es\julionieto\agendalibros\entities\Editorial.class
+es\julionieto\agendalibros\SecondaryController$2.class
 module-info.class
 es\julionieto\agendalibros\App.class
 es\julionieto\agendalibros\entities\Libro.class
 es\julionieto\agendalibros\SecondaryController.class
+es\julionieto\agendalibros\SecondaryController$1.class

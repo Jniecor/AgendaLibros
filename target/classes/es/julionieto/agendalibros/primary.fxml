@@ -13,9 +13,9 @@
    <children>
       <HBox spacing="20.0">
          <children>
-            <Button mnemonicParsing="false" text="Editar" />
-            <Button mnemonicParsing="false" text="Suprimir" />
-            <Button mnemonicParsing="false" text="Nuevo" />
+            <Button mnemonicParsing="false" onAction="#onActionButtonNuevo" text="Nuevo" />
+            <Button mnemonicParsing="false" onAction="#onActionButtonEditar" text="Editar" />
+            <Button mnemonicParsing="false" onAction="#onActionButtonSuprimir" text="Suprimir" />
          </children>
       </HBox>
       <TableView fx:id="tableViewLibros" prefHeight="275.0" prefWidth="711.0">

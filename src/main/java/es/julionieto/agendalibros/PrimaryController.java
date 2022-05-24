@@ -74,11 +74,11 @@ public class PrimaryController implements Initializable {
         tableViewLibros.setItems(FXCollections.observableArrayList(listLibro));
     }
     
-    public void setLibro(Libro libro) {
-        App.em.getTransaction().begin();
-        this.libro = libro;
-        mostrarDatos();
-    }    
+//    public void setLibro(Libro libro) {
+//        App.em.getTransaction().begin();
+//        this.libro = libro;
+//        mostrarDatos();
+//    }    
     
     @FXML
     private void onActionButtonGuardar(ActionEvent event){
@@ -111,6 +111,20 @@ public class PrimaryController implements Initializable {
 
     @FXML
     private void onActionButtonEditar(ActionEvent event) {
+        if(libroSeleccionado != null){
+            try {
+                App.setRoot("secondary");
+                SecondaryController secondaryController = (SecondaryController) App.fxmlLoader.getController();
+                secondaryController.setLibro(libroSeleccionado, false);
+            } catch (IOException ex){
+                Logger.getLogger(PrimaryController.class.getName()).log(Level.SEVERE, ex.getMessage(), ex);
+            }
+        } else {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Atención");
+            alert.setHeaderText("Debe seleccionar un registro");
+            alert.showAndWait();
+        }
     }
 
     @FXML

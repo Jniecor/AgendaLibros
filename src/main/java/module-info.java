@@ -5,6 +5,7 @@ module es.julionieto.agendalibros {
     requires java.instrument;
     requires java.persistence;
     requires java.sql;
+    requires java.base;
     
     opens es.julionieto.agendalibros.entities;
     opens es.julionieto.agendalibros to javafx.fxml;
